@@ -8,7 +8,7 @@ import caret from '../assets/caret_icon.svg'
 
 function Navbar() {
     return (
-        <div className=" flex justify-between items-center px-7 mt-5 relative">
+        <div className=" flex justify-between items-center px-7 mt-5 relative z-10">
             {/* left comp */}
             <div className="flex gap-4 items-center" >
                 <img src={logo} alt="" className='h-4 mr-4' />

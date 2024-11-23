@@ -7,3 +7,11 @@ body{
   background: black;
   color: white;
 }
+.bannerimg{
+  mask-image:linear-gradient(to right,transparent, black 75%);
+  -webkit-mask-image:linear-gradient(to right,transparent, black 75%);
+
+}
+.popular::-webkit-scrollbar{
+  display: none;
+}
