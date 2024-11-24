@@ -15,7 +15,7 @@ function Footer() {
                     <img src={twitter} alt="" className='w-8' />
                     <img src={youtube} alt="" className='w-8' />
                 </div>
-                <div className='grid grid-cols-4  gap-5 mt-5 font-semibold '>
+                <div className='grid grid-cols-4  gap-5 mt-5 font-meium '>
                     <ul className='flex flex-col gap-2'>
                         <li>Audio Description</li>
                         <li>investor Relations</li>

@@ -3,14 +3,16 @@ import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
-function App() {
+import Player from './pages/Player'
 
+function App() {
   return (
     <div>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/player/:id' element={<Player />} />
         </Routes>
 
       </Router>

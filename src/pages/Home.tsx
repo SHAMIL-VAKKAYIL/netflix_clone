@@ -10,7 +10,7 @@ function Home() {
     // 6d6deb3  /66
     return (
         <div className='relative'>
-            <div className="fixed z-10 w-full ">
+            <div className="fixed z-10 w-full h-full ">
                 <Navbar />
             </div>
             {/* herosection */}
@@ -29,11 +29,10 @@ function Home() {
 
             </div>
             <div className="">
-                <TitleCards mtitle="Popular Movies"  />
-                <TitleCards mtitle="Blockbuster Movies" />
-                <TitleCards mtitle="Only on Netflix" />
-                <TitleCards mtitle="Upcoming" />
-                <TitleCards mtitle="Top pics for You" />
+                <TitleCards mtitle="Popular Movies" category="popular"  />
+                <TitleCards mtitle="Top Rated" category="top_rated" />
+                <TitleCards mtitle="Latest" category="now_playing" />
+                <TitleCards mtitle="Upcoming" category="upcoming" />
             </div>
             <Footer />
         </div>
