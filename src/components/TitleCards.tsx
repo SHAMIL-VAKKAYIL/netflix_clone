@@ -1,12 +1,17 @@
 import cards_data from "../assets/cards/Cards_data";
 import TitlecardComp from "./reusable/TitlecardComp";
 
-function TitleCards() {
-  return (
-    <div className="px-5">
+interface ITitleCards{
+  mtitle?:string,
+  category?:string
+}
 
-      <h1 className="text-xl mt-5">Popular shows</h1>
-      <div className="flex overflow-x-scroll popular gap-5  h-[250px] mt-5 ">
+function TitleCards({mtitle,category}:ITitleCards) {
+  return (
+    <div className="pl-5">
+
+      <h1 className="text-xl mt-5 font-semibold">{mtitle}</h1>
+      <div className="flex overflow-x-scroll popular gap-5 mt-5 ">
         {cards_data.map((item, index) => (
           <div key={index} className="">
             <TitlecardComp
