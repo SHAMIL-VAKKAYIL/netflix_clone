@@ -10,7 +10,7 @@ function Home() {
     // 6d6deb3  /66
     return (
         <div className='relative'>
-            <div className="fixed z-10 w-full h-full ">
+            <div className=" w-full h-full ">
                 <Navbar />
             </div>
             {/* herosection */}

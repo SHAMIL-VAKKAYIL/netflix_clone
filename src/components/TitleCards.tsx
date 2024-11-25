@@ -37,10 +37,9 @@ function TitleCards({ mtitle, category }: ITitleCards) {
 
 
   return (
-    <div className="pl-5">
-
+    <div className="pl-5 ">
       <h1 className="text-xl mt-5 font-medium">{mtitle}</h1>
-      <div className="flex overflow-x-scroll popular gap-5 mt-5 ">
+      <div className="flex overflow-x-scroll popular  gap-5 mt-5 ">
         {movieList.map((item, index) => (
           <div key={index} className="">
             <TitlecardComp
