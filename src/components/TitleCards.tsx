@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import cards_data from "../assets/cards/Cards_data";
 import TitlecardComp from "./reusable/TitlecardComp";
 import { fetchMovies } from "../service/mApi";
+import MovieListLodingComp from "./reusable/MovieListLodingComp";
 
 interface ITitleCards {
   mtitle?: string,
@@ -40,15 +40,18 @@ function TitleCards({ mtitle, category }: ITitleCards) {
     <div className="pl-5 ">
       <h1 className="text-xl mt-5 font-medium">{mtitle}</h1>
       <div className="flex overflow-x-scroll popular  gap-5 mt-5 ">
-        {movieList.map((item, index) => (
-          <div key={index} className="">
-            <TitlecardComp
-              id={item.id}
-              image={item.backdrop_path}
-              title={item.original_title}
-            />
-          </div>
-        ))}
+        {loaidngState ?
+          <MovieListLodingComp />
+          : movieList.map((item, index) => (
+            <div key={index} className="">
+              <TitlecardComp
+                id={item.id}
+                image={item.backdrop_path}
+                title={item.original_title}
+              />
+            </div>
+
+          ))}
       </div>
     </div>
 

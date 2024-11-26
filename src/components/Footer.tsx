@@ -7,7 +7,7 @@ import youtube from '../assets/youtube_icon.png'
 
 function Footer() {
     return (
-        <div className=" max-w-[60%] m-auto mt-10 justify-center items-center ">
+        <div className=" max-w-[70%] m-auto mt-10 justify-center items-center ">
             <div className='flex flex-col gap-5 '>
                 <div className='flex gap-3'>
                     <img src={instagram} alt="" className='w-8' />
@@ -15,7 +15,7 @@ function Footer() {
                     <img src={twitter} alt="" className='w-8' />
                     <img src={youtube} alt="" className='w-8' />
                 </div>
-                <div className='grid grid-cols-4  gap-5 mt-5 font-meium '>
+                <div className='grid grid-cols-2 md:grid-cols-4   gap-5 mt-5 font-meium '>
                     <ul className='flex flex-col gap-2'>
                         <li>Audio Description</li>
                         <li>investor Relations</li>
