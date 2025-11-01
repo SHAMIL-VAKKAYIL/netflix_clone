@@ -33,7 +33,6 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/player/:id' element={<Player />} />
       </Routes>
-
     </div>
   )
 }
